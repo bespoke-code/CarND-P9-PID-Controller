@@ -33,7 +33,7 @@ int main()
     uWS::Hub h;
 
     PID pid;
-    double Kp = 0, Kd = 0, Ki = 0;
+    double Kp = 0.1, Kd = 1, Ki = 0.001;
 
     // Initialize the pid variable.
     pid.Init(Kp, Ki, Kd);
